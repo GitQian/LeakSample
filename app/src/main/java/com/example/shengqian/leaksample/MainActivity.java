@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
     View button = findViewById(R.id.async_task);
     button.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        startAsyncTask();
+        new MyAsyncTask().execute();
       }
     });
   }
